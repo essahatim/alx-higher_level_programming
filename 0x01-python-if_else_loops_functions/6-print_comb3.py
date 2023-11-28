@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for number in range(0, 9):
-    for number2 in range(number, 10):
-        if number < number2:
-            print("{:d}{:d}".format(number, number2), 
-                    end='\n' if number == 8 and number2 == 9 else ", ")
+for num1 in range(0, 10):
+    for num2 in range(num1, 10):
+        if num1 < num2:
+            print("{:d}{:d}".format(num1, num2), 
+                    end='\n' if num1 == 8 and num2 == 9 else ", ")
