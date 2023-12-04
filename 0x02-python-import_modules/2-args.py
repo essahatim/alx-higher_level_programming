@@ -8,6 +8,6 @@ if __name__ == "__main__":
     elif size == 1:
         print("1 arguments.")
     else:
-        print("{:d} arguments:".format(size))
-    for i in range(1, size + 1):
-        print("{:d}: {:d}".format(i, sys.argv[i]))
+        print("{} arguments:".format(size))
+    for i in range(size):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))
