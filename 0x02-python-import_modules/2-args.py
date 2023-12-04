@@ -5,10 +5,9 @@ if __name__ == "__main__":
     size = len(sys.argv) - 1
     if size == 0:
         print("0 arguments.".format(size))
-    elif size > 1:
-        print("{} arguments:".format(size))
-        for i in range(1, size + 1):
-            print("{}: {}".format(i, argv[i]))
+    elif size == 1:
+        print("1 arguments.".format(size))
     else:
-        print("{} argument:".format(size))
-        print("{}: {}".format(size, argv[1]))
+        print("{:d} arguments:".format(size))
+    for i in range(1, size + 1):
+        print("{:d}: {:d}".format(i, sys.argv[i]))
