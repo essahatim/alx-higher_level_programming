@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
 
     if not matrix:
-        return None
+        print()
     else:
         for my_list in range(len(matrix)):
             for i in range(len(matrix[my_list])):
