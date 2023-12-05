@@ -2,11 +2,11 @@
 def print_matrix_integer(matrix=[[]]):
 
     if not matrix:
-        print()
+        return
     else:
         for my_list in range(len(matrix)):
             for i in range(len(matrix[my_list])):
-                if i != matrix[my_mylist] - 1:
+                if i != len(matrix[my_list]) - 1:
                     space = " "
                 else:
                     space = ""
