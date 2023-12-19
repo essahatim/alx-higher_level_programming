@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+'''Square module'''
+
 
 class Square:
+    '''Defines square'''
 
     def __init__(self, size=0):
         self.size = size
@@ -22,6 +25,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    # calculate and return the square area
+    '''Calculate and return the square area'''
     def area(self):
         return self.__size ** 2
