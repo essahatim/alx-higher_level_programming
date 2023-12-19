@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+class Square:
+    def __init__(self, size=0):
+
+        '''
+        Check if the provided size is an integer
+        Check if the provided size is greater than or equal to 0
+        '''
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
+
+    def area(self):
+
+        # calculate and return the square area
+        return self.__size ** 2
