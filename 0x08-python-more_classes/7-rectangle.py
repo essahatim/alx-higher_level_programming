@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 '''
 Defines an class Rectangle
 '''
@@ -7,6 +7,7 @@ Defines an class Rectangle
 class Rectangle:
     '''Representation of a rectangle'''
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         '''Initialize the Rectangle instance with optional width and height'''
@@ -75,7 +76,7 @@ class Rectangle:
         else:
             rectangle_str = ""
             for i in range(self.__height):
-                rectangle_str += "#" * self.__width + "\n"
+                rectangle_str += str(self.print_symbol) * self.__width + "\n"
             return rectangle_str
 
     def __repr__(self):
