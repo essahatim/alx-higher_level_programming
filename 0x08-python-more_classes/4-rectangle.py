@@ -60,6 +60,9 @@ class Rectangle:
                 rectangle_str += "#" * self.__width + "\n"
             return rectangle_str
 
-        def __repr__(self):
-            '''Return a string representation of the rectangle to recreate a new instance'''
-            return (f"Rectangle({self.__width}, {self.__height})")
+    def __repr__(self):
+        '''
+        Return a string representation of the rectangle
+        to recreate a new instance
+        '''
+        return (f"Rectangle({self.__width}, {self.__height})")
