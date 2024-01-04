@@ -67,6 +67,7 @@ class Rectangle:
         '''Calculate and return the perimeter of the rectangle'''
         if self.__width != 0 and self.__height != 0:
             return 2 * (self.__width + self.__height)
+        return 0
 
     def __str__(self):
         '''Return a string representation of the rectangle'''
@@ -83,9 +84,9 @@ class Rectangle:
         Return a string representation of the rectangle
         to recreate a new instance
         '''
-        return (f"Rectangle({self.__width}, {self.__height})")
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         '''Print a message when an instance of Rectangle is deleted'''
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        Rectanglie.number_of_instances -= 1
