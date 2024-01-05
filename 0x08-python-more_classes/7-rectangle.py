@@ -19,7 +19,7 @@ class Rectangle:
     def __del__(self):
         '''Print a message when an instance of Rectangle is deleted'''
         print("Bye rectangle...")
-        Rectanglie.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
