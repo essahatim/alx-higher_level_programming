@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-
 def magic_string():
-    return ', '.join(['BestSchool'] * (i + 1) for i in range(10))
+    magicStr.count = getattr(magicStr, 'count', 0) + 1
+    return ', '.join(['BestSchool' for _ in range(magicStr.count)])
