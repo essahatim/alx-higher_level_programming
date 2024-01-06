@@ -16,11 +16,6 @@ class Rectangle:
         self.height = height
         Rectangle.number_of_instances += 1
 
-    def __del__(self):
-        '''Print a message when an instance of Rectangle is deleted'''
-        print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
-
     @property
     def width(self):
         '''Getter method for retrieving the width of the rectangle'''
@@ -89,3 +84,8 @@ class Rectangle:
         to recreate a new instance
         '''
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
+
+    def __del__(self):
+        '''Print a message when an instance of Rectangle is deleted'''
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
