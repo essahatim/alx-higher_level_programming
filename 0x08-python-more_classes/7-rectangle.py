@@ -8,7 +8,10 @@ class Rectangle:
     '''Representation of a rectangle'''
 
     number_of_instances = 0
+    '''The number of active instances'''
+
     print_symbol = "#"
+    '''Print symbol can be any type'''
 
     def __init__(self, width=0, height=0):
         '''Initialize the Rectangle instance with optional width and height'''
