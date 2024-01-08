@@ -4,6 +4,8 @@ Rectangle = __import__("9-rectangle.py").Rectangle
 
 
 class Square(Rectangle):
+    """A class dirvied """
+
     def def __init__(self, size):
         '''Initializes a Square object with a given size'''
         self.integer_validator("size", size)
