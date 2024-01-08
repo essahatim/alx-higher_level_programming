@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Module for an Rectangle class"""
-BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """A rectangle class"""
+    """A subclass  rectangle """
 
     def __init__(self, width, height):
         '''Initializes a Rectangle object with width and height'''
