@@ -4,7 +4,6 @@
 
 class Student:
     """Class that defines a student"""
-
     def __init__(self, first_name, last_name, age):
         """Instantiation with first_name, last_name, and age"""
         self.first_name = first_name
@@ -24,4 +23,3 @@ class Student:
             if key in attrs:
                 json_dict[key] = value
         return json_dict
-            
