@@ -7,8 +7,8 @@ class Square(Rectangle):
     """Square class, inherits from Rectangle."""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Initialize a Square object."""
-        super().__init__(size, size, x, y, id)
+         """Initialize a Square object."""
+         super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """Return a formatted string representation."""
@@ -22,8 +22,8 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        self.width = value
-        self.height = value
+         self.width = value
+         self.height = value
 
     def __update(self, id=None, size=None, x=None, y=None):
         """Assign arguments to attributes"""
@@ -50,4 +50,3 @@ class Square(Rectangle):
                 'size': self.width,
                 'x': self.x
                 'y': self.y
-                }
