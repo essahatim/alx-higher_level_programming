@@ -4,7 +4,7 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Square class, inherits from Rectangle."""
+    """Square class."""
 
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize a Square object."""
@@ -12,8 +12,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return a formatted string representation."""
-        return "[{}] ({}) {}/{} - {}".\
-            format(type(self).__name__, self.id, self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".\
+            format(self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
