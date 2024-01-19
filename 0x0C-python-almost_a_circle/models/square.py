@@ -29,7 +29,7 @@ class Square(Rectangle):
         """Method that updates instance attributes."""
         if id is not None:
             self.id = id
-        if width is not None:
+        if size is not None:
             self.size = size
         if x is not None:
             self.x = x
