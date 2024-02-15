@@ -1,0 +1,1 @@
+-- Display the average temperature by city ordered by temperature (descending)
