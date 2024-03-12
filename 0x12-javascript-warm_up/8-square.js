@@ -4,8 +4,9 @@ const firstArg = process.argv[2];
 const size = parseInt(firstArg);
 
 if (!isNaN(size)) {
-  while (let i = 0; i < x) {
-    console.log('X'.repeat(x));
+  let i = 0;
+  while (i < size) {
+    console.log('X'.repeat(size));
     i++;
   }
 } else {
