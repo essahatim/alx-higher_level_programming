@@ -2,6 +2,7 @@
 """
 Script that displays all values in the states table of hbtn_0e_0_usa
 Where name matches the argument.
+Safe from MySQL injection.
 """
 
 import MySQLdb
@@ -18,8 +19,8 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
-                .format(sys.argv[4])))
+    state_name = sys.argv[4]
+    cursor.execute("SELECT * FROM states WHERE name LIKE %s", (state_name, ))
 
     rows = cursor.fetchall()
 
