@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Script that displays all values in the states table of hbtn_0e_0_usa
-Where name matches the argument.
+Script that lists all cities from the database hbtn_0e_4_usa.
 """
 
 import MySQLdb
@@ -16,11 +15,8 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-    cursor = db.cursor()
-
-    state_name = sys.argv[4]
-    sql = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-    cursor.execute(sql, (state_name,))
+    cursor.execute("""SELECT cities.id, cities.name, states.name FROM
+                cities INNER JOIN states ON states.id=cities.state_id""")
 
     rows = cursor.fetchall()
 
