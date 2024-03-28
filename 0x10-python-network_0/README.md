@@ -1,0 +1,1 @@
+This networking project focuses on utilizing curl within Bash scripts to interact with web servers via HTTP requests. Throughout the project, I explored various aspects of networking, including understanding URL structures, domain names, HTTP headers, status codes, and cookie management.
