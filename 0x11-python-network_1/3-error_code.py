@@ -7,12 +7,11 @@ Takes in a URL:
     prints the HTTP status code
 """
 
-
-import urllib
+import urllib.request
+import urllib.error
 import sys
 
 if __name__ == "__main__":
-
     try:
         with urllib.request.urlopen(sys.argv[1]) as response:
             body = response.read()
