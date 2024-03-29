@@ -7,7 +7,7 @@ Fetches https://alx-intranet.hbtn.io/status:
 
 import requests
 
-if __name__ : "__main__":
+if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
     body = requests.get(url).text
 
