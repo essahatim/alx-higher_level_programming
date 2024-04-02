@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     url = "http://0.0.0.0:5000/search_user"
     response = requests.post(url, data={'q': q})
-    
+
     try:
         json_resp = response.json()
         if json_resp:
