@@ -9,6 +9,7 @@ request(process.argv[2], (err, response, body) => {
 
   if (response.statusCode !== 200) {
     console.log(`Error: Status code ${response.statusCode}`);
+    return;
   }
 
   let i = 0;
