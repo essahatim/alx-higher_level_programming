@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const request = require('request');
 
-const api_Url = `https://swapi-api.alx-tools.com/api/films/${process.argv[2]}`;
-request(api_Url, (err, response, body) => {
+const apiUrl = `https://swapi-api.alx-tools.com/api/films/${process.argv[2]}`;
+request(apiUrl, (err, response, body) => {
   if (err) {
     console.err(err);
   }
