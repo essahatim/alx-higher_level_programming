@@ -7,15 +7,10 @@ request(process.argv[2], (err, response, body) => {
     return;
   }
 
-  if (response.statusCode !== 200) {
-    console.log(`Error: Status code ${response.statusCode}`);
-    return;
-  }
-
   let i = 0;
 
   JSON.parse(body).results.forEach(film => {
-    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/18/`)) {
+    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${'18'}/`)) {
       i++;
     }
   });
