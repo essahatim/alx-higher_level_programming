@@ -29,4 +29,3 @@ request(apiUrl, (err, response, body) => {
 
   fetchCharacter(0);
 });
-
