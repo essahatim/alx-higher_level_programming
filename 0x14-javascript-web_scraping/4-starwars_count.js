@@ -15,7 +15,7 @@ request(process.argv[2], (err, response, body) => {
   let i = 0;
 
   JSON.parse(body).results.forEach(film => {
-    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${'18'}/`)) {
+    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/18/`)) {
       i++;
     }
   });
